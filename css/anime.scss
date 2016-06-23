@@ -1,0 +1,481 @@
+@charset "UTF-8";
+$base-c:#FFBE2E;
+body{
+  background: #fff;
+  font-family:Arial,"黑体";
+}
+.top-bar{
+  line-height: 40px;
+  border-bottom: #DDDBDC 1px solid;
+  color: #616161;
+  background: #f5f5f5;
+  a:hover{
+    color: darken(#616161,20%);
+  }
+}
+.ani-nav{
+  height: 138px;
+  font-size: 0;
+  background: url(../images/anime/bor.png) no-repeat right center;
+  .logo{
+    margin: 21px 169px 0 0;
+    img{
+      width: 276px;
+      height: 96px;
+    }
+  }
+  .item{
+    width: 120px;
+    background: url(../images/anime/bor.png) no-repeat left 0;
+    height: 110px;
+    font-size: 18px;
+    color: #f1838a;
+    margin-top: 14px;
+    padding-left: 5px;
+    i{
+      width: 50px;
+      height: 40px;
+      margin: 20px auto 10px;
+      background: url(../images/anime/ani-icon.png) no-repeat;
+    }
+    &:hover{color: #db3540;}
+  }
+}
+/*图文推*/
+.news-box{
+  background: url(../images/anime/top-bg.jpg) no-repeat center 0;
+  height: 490px;
+  box-sizing: border-box;
+}
+/*幻灯*/
+.focusBox{
+  width: 484px;
+  height: 302px;
+  img{
+    width: 484px;
+    height: 302px;
+  }
+  .txt{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    bottom: 0;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    li{
+      position: absolute;
+      bottom: -40px;
+      width: 85%;
+      padding-left: 10px;
+    }
+  }
+  .num{
+    color: #fff;
+    right: 20px;
+    bottom: 0;
+    line-height: 40px;
+    .index-num{
+      color: $base-c;
+      font-size: 16px;
+    }
+  }
+  .prev, .next{
+    width: 40px;
+    height: 70px;
+    top: 50%;
+    margin-top: -35px;
+    left: 10px;
+    background: url(../images/anime/ani-icon.png) no-repeat 0 -74px;
+    cursor: pointer;
+    display: none;
+  }
+  .next{
+    left: auto;
+    right: 10px;
+    background-position: -40px -74px;
+  }
+  &:hover .prev, &:hover .next{display: block;}
+}
+.news-block{
+  img{
+    width: 228px;
+    height: 146px;
+  }
+}
+.ad-img img{
+  width: 1200px;
+  height: 130px;
+}
+/*首页词条列表*/
+.title{
+  font-size: 26px;
+  border-top: #DCDCDC 1px solid;
+  height: 44px;
+  & > i{
+    width: 38px;
+    height: 34px;
+    background: url(../images/anime/ani-icon.png) no-repeat;
+  }
+  .more{
+    width: auto;
+    height: auto;
+    background: none;
+    font-size: 20px;
+    i{
+      width: 26px;
+      height: 26px;
+      background: url(../images/anime/ani-icon.png) 0 -144px;
+    }
+  }
+}
+.word{
+  font-size: 24px;
+}
+.word-img img{
+  border-radius: 50%;
+  border: transparent 3px solid;
+}
+.l-content{width: 890px;}
+.zxct i{background-position: 0 -40px;}
+.dmct i{background-position: -38px -40px;}
+.cosct i{background-position: -76px -40px;}
+.tbct i{background-position: -114px -40px;}
+.wbct i{background-position: -152px -40px;}
+.fltj i{background-position: -190px -40px;}
+.word-box{
+  margin-bottom: 30px;
+  .word-list{
+    margin-top: 30px;
+    & > div{
+      width: 200px;
+      margin-right: 30px;
+      border-top: #eee 1px solid;
+      &:nth-of-type(4n){margin-right: 0;}
+      &:hover{
+        img{border-color: $base-c;}
+      }
+      .word{
+        width: 126px;
+        height: 34px;
+        &:hover{color: $base-c;}
+      }
+      .more{
+        font-size: 14px;
+        color: #6f6f6f;
+        background: none;
+        &:hover{color: #353535;}
+      }
+      .word-img{
+        width: 66px;
+        max-width: 66px;
+        img{
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+.r-side{
+  width: 290px;
+}
+.s-tip{
+  font-size: 20px;
+  line-height: 20px;
+  padding:0 0 10px 15px;
+  border-bottom: #eee 1px solid;
+  position: relative;
+  margin-bottom: 10px;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background: $base-c;
+    top: 0;
+    left: 0;
+  }
+}
+.word-rank{
+  li{
+    line-height: 20px;
+    height: 20px;
+    color: #757575;
+    &:hover .word{color: $base-c;}
+  }
+
+  .word{
+    font-size: 16px;
+    color: #000;
+  }
+  span{
+    width: 20px;
+    line-height: 20px;
+    background: #C3C3C3;
+    color: #fff;
+  }
+  .top-three{background: $base-c}
+}
+.pics{
+  border-top: #EFEFEF 1px solid;
+  .pic1 img{
+    width: 318px;
+    height: 394px;
+  }
+  .pic2 img{
+    width: 240px;
+    height: 164px;
+  }
+  .pic3 img{
+    width: 490px;
+    height: 220px;
+  }
+  .pic4 img{
+    width: 370px;
+    height: 248px;
+  }
+  .pic5 img{
+    width: 180px;
+    height: 136px;
+  }
+}
+.ani-foot{
+  border-top: #DDDBDC 1px solid;
+  line-height: 72px;
+  background: #F5F5F5;
+  color: #616161;
+}
+/*词条列表页面*/
+.tit-ct i{background-position: 0 -40px;}
+.word-ency{
+  .word-list{
+    margin-top: 30px;
+    .word-img{
+      width: 140px;
+      max-width: 140px;
+      img{
+        width: 134px;
+        height: 134px;
+      }
+    }
+    .word-con{
+      .word{width: 100%;}
+      p{
+        text-indent: 2em;
+        width: 100%;
+        line-height: 22px;
+        height: 88px;
+        color: #6f6f6f;
+      }
+    }
+    li{
+      border-top: #eee 1px solid;
+      padding-bottom: 30px;
+      &:last-of-type{border-bottom: #eee 1px solid;}
+      &:hover{
+        img{border-color: $base-c;}
+        .word{color: $base-c;}
+        p{color: #353535;}
+      }
+    }
+  }
+}
+.ani-page-list{
+  li{
+    border: none;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    & a:hover, &.page-on a{
+      background: $base-c;
+    }
+  }
+  .page-prev a:after, .page-next a:after{
+    border: none;
+    background: $base-c;
+  }
+  .page-prev a:hover:after, .page-next a:hover:after{background: $base-c}
+}
+.event-recom{
+  li{
+    img{
+      width: 290px;
+      height: 100px;
+    }
+    div{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+      background: url(../images/shadow.png) repeat;
+      color: #fff;
+      display: none;
+      b{
+        color: $base-c;
+        font-size: 16px;
+      }
+    }
+    &:hover div{display: block;}
+  }
+}
+.pic-recom{
+  li{
+    margin: 0 10px 10px 0;
+    &:nth-of-type(2n){margin-right: 0;}
+    img{
+      width: 140px;
+      height: 170px;
+    }
+  }
+}
+/*词条详情页*/
+.word-det{margin-top: -4px;}
+.word-panel{
+  .word-img img{
+    width: 120px;
+    height: 120px;
+    border-color: $base-c;
+    margin-top: -30px;
+  }
+  .word-title{
+    border-bottom: #eee 1px solid;
+    .word{
+      color: $base-c;
+      span{
+        max-width: 300px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+.word-para{
+  text-indent: 2em;
+  color: #353535;
+  margin: 10px 10px 10px 140px;
+  img{
+    margin: auto;
+    max-width: 700px;
+  }
+}
+.relate-word{
+  .word-tit{
+    span{
+      border: $base-c 3px solid;
+      font-size: 16px;
+      width: 28px;
+      line-height: 28px;
+      border-radius: 50%;
+      background: #fff;
+      z-index: 2;
+    }
+    .word{
+      font-size: 20px;
+      background: #fff;
+      z-index: 2;
+    }
+    line-height: 34px;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 17px;
+      background: #eee;
+    }
+  }
+}
+.word-recom-font{
+  li{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 15px;
+    line-height: 30px;
+    color: #757575;
+    .word{
+      font-size: 16px;
+      color: #000;
+    }
+    &:hover .word{color: $base-c;}
+  }
+}
+/*词条图集列表页*/
+.pic-list{
+  img{width: 100%;}
+  li{
+    width: 242px;
+    -webkit-transition: all 0.8s ease-out;
+    -moz-transition: all 0.8s ease-out;
+    -o-transition: all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+    left: 0;
+    top: 0;
+    background: #fff;
+    .word{
+      font-size: 14px;
+      color: #000;
+    }
+    p{
+      color: #636363;
+      padding: 5px;
+    }
+  }
+}
+/*图集详情页*/
+.pic-title{
+  font-size: 24px;
+  border-bottom: #F2F2F2 1px solid;
+}
+.imgs{
+  & > img{
+    margin: 20px auto;
+    max-width: 1000px;
+  }
+  .prev, .next{
+    width: 40px;
+    height: 70px;
+    top: 50%;
+    margin-top: -35px;
+    left: 0;
+    background: url(../images/anime/ani-icon.png) no-repeat 0 -74px;
+    cursor: pointer;
+  }
+  .next{
+    left: auto;
+    right: 0;
+    background-position: -40px -74px;
+  }
+  .recom-pic{
+    li{width: 170px;}
+    img{
+      width: 170px;
+      height: 116px;
+    }
+    .media-tit{color: #fff;}
+  }
+}
+.pis-num{
+  font-size: 16px;
+  .index{
+    font-size: 20px;
+    color: $base-c;
+  }
+}
+.img-intro{
+  width: 950px;
+  text-indent: 2em;
+  line-height: 24px;
+}
+.word-recom-img{
+  border-bottom: #eee 1px solid;
+  li{
+    margin-right: 11px;
+    &:last-of-type{margin-right: 0;}
+    img{
+      width: 140px;
+      height: 172px;
+    }
+  }
+}

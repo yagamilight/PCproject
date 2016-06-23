@@ -1,0 +1,226 @@
+@import "scss/button";
+.news-nav {
+  a{padding: 0 25px;}
+  i{background: url(../images/icon.png) no-repeat -406px -375px;}
+}
+/*新闻列表*/
+.news-list{
+  width: 860px;
+  li{
+    &:before{
+      content:"";
+      position: absolute;
+      width: 6px;
+      height: 0;
+      left: 0;
+      top: 0;
+      background: #f60;
+      -webkit-transition: all 0.5s;
+      transition: height 0.5s;
+    }
+    &:hover:before{height: 100%;}
+    h2{
+      font-size: 20px;
+      line-height: 58px;
+      border-bottom: #F0F0F0 1px solid;
+    }
+    img{
+      width: 244px;
+      height: 168px;
+    }
+    p{
+      color: #a8a8a8;
+      line-height: 24px;
+      width: 540px;
+      height: 168px;
+    }
+  }
+  .news-tip{
+    line-height: 38px;
+    border-top: #F0F0F0 1px solid;
+    span{color: #f60;}
+  }
+}
+
+/*侧边栏*/
+.side-bar{
+  .bg-girl1 img{width: 300px;height: 206px;}
+  .bg-girl2 img{width: 145px;height: 100px;}
+}
+.ad img{width: 320px;height: 219px;}
+.side-news-list{
+  li{
+    border-bottom: #F0F0F0 1px solid;
+    &:last-child{border-bottom: none;}
+  }
+  img{
+    width: 108px;
+    height: 74px;
+  }
+  .title{
+    font-size: 16px;
+    width: 180px;
+  }
+  p{
+    width: 180px;
+    height: 40px;
+  }
+}
+.side-game-list{
+  li{
+    width: 100px;
+    img{
+      width: 76px;
+      height: 76px;
+      border-radius: 10px;
+    }
+    p{
+      line-height: 30px;
+      margin-bottom: 5px;
+      width: 76px;
+    }
+    &:hover p{color: #f60;}
+  }
+}
+
+/*新闻内页*/
+.news{padding: 0 25px;}
+.news-tit-con{
+  padding: 20px 10px;
+  border-bottom: #F0F0F0 1px solid;
+  width: 790px;
+  img{
+    width: 142px;
+    height: 98px;
+  }
+  h1{
+    font-size: 26px;
+    color: #434343;
+    width: 630px;
+  }
+  .art-info, .share{
+    color: #a8a8a8;
+  }
+}
+.news p{
+  text-indent: 2em;
+  font-family: "宋体";
+  padding: 0 12px;
+  line-height: 28px;
+  img{margin:15px auto;}
+}
+.art-tip{
+  border-top: #F0F0F0 1px solid;
+  padding: 20px 10px;
+  color: #a8a8a8;
+}
+/*相关推荐*/
+.recom-list{
+  padding: 0 4px;
+  li{
+    width: 200px;
+    margin-right: 7px;
+    &:nth-of-type(4n){margin-right: 0;}
+    img{
+      width: 200px;
+      height: 136px;
+    }
+    &.strategy span{
+      position: absolute;
+      background: url(../images/icon.png) no-repeat -148px -125px;
+      width: 64px;
+      height: 64px;
+      left: -4px;
+      top: -4px;
+      z-index: 5;
+    }
+  }
+}
+
+/*内页侧边栏*/
+.game-intro{
+  width: 300px;
+  img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  p{
+    color: #a8a8a8;
+    width: 105px;
+    margin-bottom: 3px;
+  }
+  .game-name{
+    color: #525252;
+    font-size: 18px;
+    margin-bottom: 10px;
+    &:hover{color: #f60;}
+  }
+  .btns{
+    width: 74px;
+    font-size: 16px;
+    a{
+      padding: 3px 0;
+      @include hollow-btn(1px,2px,#f60);
+    }
+  }
+}
+/*推荐礼包*/
+.pack{
+  color: #525252;
+  &:before, &:after{
+    content: "";
+    position: absolute;
+  }
+  &:before{
+    background: url(../images/news/p-l-img.png) no-repeat;
+    width: 58px;
+    height: 56px;
+    left: -16px;
+    bottom: -4px;
+  }
+  &:after{
+    background: url(../images/news/p-r-img.png) no-repeat;
+    width: 54px;
+    height: 55px;
+    right: -18px;
+    bottom: -6px;
+  }
+}
+.pack-info img{
+  width: 300px;
+  height: 80px;
+}
+.pack-info:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.pack-detail{
+  width: 260px;
+  height:40px;
+  top: 0;
+  color: #fff;
+  z-index: 4;
+  display: none;
+}
+.pack-info:hover{
+  &:after{background: url(../images/shadow.png) repeat;}
+  .pack-detail{display: block;}
+}
+.pack-name{
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.pack-get{
+  width: 214px;
+  border-bottom: #666 1px solid;
+  margin-left: 50px;
+  span{color: #f60;}
+}

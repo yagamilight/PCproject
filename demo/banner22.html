@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        .focusBox { position: relative; width:100%; height:450px; overflow: hidden; }
+        .focusBox .pic li{
+            height: 450px;
+            position: relative;
+        }
+        .videos{
+            width: 1200px;
+            margin: auto;
+        }
+        .videos video{
+            display: none;
+            float: left;
+        }
+        .play{
+            float: right;
+            width: 100px;
+            height: 100px;
+            background: #01FDFE;
+        }
+
+        .focusBox .prev,
+        .focusBox .next { width: 60px; height: 90px; margin: -60px 0 0;  background: url(images/ad_ctr.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; filter:alpha(opacity=20);opacity:0.2;  }
+        .focusBox .prev { left: 0; }
+        .focusBox .next { background-position: 0 -90px; right: 0; }
+
+    </style>
+</head>
+<body>
+    <div class="focusBox" style="margin:0 auto">
+        <ul class="pic">
+            <li style="background: url(images/139-150HZUP1-50.jpg) no-repeat center 0;">
+                <div class="videos">
+                    <video src="video.mp4" width="800" height="400" controls="controls"></video>
+                    <span class="play"></span>
+                </div>
+            </li>
+            <li style="background: url(images/b8014a90f603738dd478baa5b51bb051f819ec03.jpg) no-repeat center 0;">
+                <div class="videos">
+                    <video src="video.mp4" width="800" height="400" controls="controls"></video>
+                    <span class="play"></span>
+                </div>
+            </li>
+            <li style="background: url(images/1114157.jpg) no-repeat center 0;">
+                <div class="videos">
+                    <video src="video.mp4" width="800" height="400" controls="controls"></video>
+                    <span class="play"></span>
+                </div>
+            </li>
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+    </div>
+<script src="jquery-1.8.3.min.js"></script>
+<script src="jquery.SuperSlide.2.1.1.js"></script>
+<script>
+    /*SuperSlide图片切换*/
+    jQuery(".focusBox").slide({ mainCell:".pic",effect:"fold", autoPlay:true, delayTime:1000, trigger:"click",startFun:function(){
+        $(".videos").find("video").css("display","none");
+    }});
+
+    $(".play").on("click",function(){
+
+        $(this).parent(".videos").find("video").css("display","block");
+
+    });
+
+    $(".prev, .next").on("click",function(){
+        $(".videos").find("video").css("display","none");
+    })
+</script>
+</body>
+</html>

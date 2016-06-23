@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <style>
+        .box{
+            width: 1200px;
+            height: 600px;
+            position: relative;
+            margin: auto;
+        }
+        .box div{
+            position: absolute;
+            transition: transform 0.5s;
+        }
+        .one{
+            width: 250px;
+            height: 250px;
+            background: #ff1493;
+            left: 100px;
+            top: 150px;
+        }
+        .two{
+            width: 300px;
+            height: 300px;
+            background: #f05d4d;
+            right: 300px;
+            top: 50px;
+        }
+        .three{
+            width: 200px;
+            height: 200px;
+            background: #003300;
+            left: 300px;
+            top: 300px;
+        }
+        .four{
+            width: 150px;
+            height: 150px;
+            background: #01FDFE;
+        }
+        .five{
+            width: 220px;
+            height: 220px;
+            background: #0000ff;
+            left: 220px;
+        }
+        .six{
+            width: 280px;
+            height: 280px;
+            background: #08aea0;
+            right: 80px;
+        }
+        .seven{
+            width: 180px;
+            height: 180px;
+            background: #ccc;
+            top: 450px;
+            left: 450px;
+        }
+        .hover{
+            transform: scale(1.3);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four hover"></div>
+        <div class="five"></div>
+        <div class="six"></div>
+        <div class="seven"></div>
+    </div>
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+    $(".box div").hover(function(){
+        $(this).addClass("hover").siblings("div").removeClass("hover");
+    })
+</script>
+</body>
+</html>

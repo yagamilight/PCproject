@@ -1,0 +1,1135 @@
+@charset "UTF-8";
+@import "scss/button";
+.game-nav {
+  a{padding: 0 35px;}
+  i{background: url(../images/icon.png) no-repeat -406px -215px;}
+}
+
+  .game-name{color: #646464;}
+
+  .pack-banner{
+    height: 340px;
+    .txt li{
+      text-align: right;
+      width: 75%;
+      right: 10px;
+    }
+    img{
+      width: 860px;
+      height: 340px;
+    }
+  }
+  .banner-game{
+    bottom: 0;
+    z-index: 3;
+    li{
+      width: 172px;
+      height: 100px;
+      position: absolute;
+      bottom: -110px;
+    }
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      margin: 0 10px;
+    }
+    .name{
+      color: #fff;
+      font-size: 18px;
+      width: 72px;
+      height: 24px;
+      overflow: hidden;
+    }
+    .btn{
+      @include hollow-btn(none,2px,#f60);
+      width: 68px;
+      padding: 1px 0 2px;
+      margin-top: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  /*新游资讯*/
+  .game-news{
+    img{
+      width: 322px;
+      height: 223px;
+    }
+    .media-tit{width: 322px;}
+    .news-list{
+      li{
+        width: 485px;
+        line-height: 30px;
+        &:first-of-type{margin-top: -15px;}
+      }
+    }
+  }
+  /*游戏推荐*/
+  .game-tj {
+    .hd {
+      width: 870px;
+      border-bottom: #F3F3F3 1px solid;
+      height: 45px;
+      li {
+        cursor: pointer;
+        width: 170px;
+        font-size: 16px;
+        height: 46px;
+        span {
+          border-right: #F0F0F0 1px solid;
+          margin-top: 11px;
+        }
+        &:last-child span {
+          border-right: none;
+        }
+        &.on {
+          background: url(../images/index/tab-on.jpg) no-repeat center bottom;
+        }
+      }
+    }
+    .bd{
+      li{
+        width: 245px;
+        margin-right: 50px;
+        &:nth-of-type(3n){margin-right: 0;}
+        p{width: 130px;}
+        img{
+          width: 100px;
+          height: 100px;
+          border-radius: 5px;
+        }
+      }
+      .game-name{font-size: 18px;}
+      .game-type{color: #a8a8a8;}
+      .btns a{
+        width: 58px;
+        line-height: 32px;
+        font-size: 16px;
+      }
+      .xz-btn{@include solid-btn(5px,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));}
+      .zq-btn{@include solid-btn(5px,map_get($pack-btn-color,zq),darken(map_get($pack-btn-color,zq),6%));}
+    }
+  }
+  /*礼包推荐*/
+  .picScroll {
+    position: relative;
+    height: 116px;
+    overflow: hidden;
+  }
+  .picScroll .tempWrap{width: 840px !important;}
+  .picScroll ul li {
+    float: left;
+    margin-right:10px;
+    width: 170px;
+    overflow: hidden;
+  }
+  .picScroll ul li img {
+    width: 170px;
+    height: 116px;
+  }
+  .picScroll .prev, .picScroll .next {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/icon.png) no-repeat -48px -204px;
+    cursor: pointer;
+  }
+  .picScroll .next {
+    left: auto;
+    right: 0;
+    background-position: -78px -204px;
+  }
+  /*游戏视频*/
+  .video-list{
+    width: 844px;
+    li{
+      margin: 0 20px 20px 0;
+      &:nth-of-type(3n){margin-right: 0;}
+    }
+    div{
+      width: 266px;
+      height: 183px;
+      img{
+        width: 266px;
+        height: 183px;
+      }
+    }
+    .name{
+      width: 100%;
+      background: url(../images/shadow.png) repeat;
+      background: rgba(0,0,0,0.6);
+      left: 0;
+      top: 152px;
+      -webkit-transition: all 0.5s;
+      transition: top 0.5s;
+      span{
+        line-height: 32px;
+        color: #fff;
+      }
+      .play-btn{
+        width: 100%;
+        height: 183px;
+        background: url(../images/index/video-on-img.png) no-repeat center;
+      }
+    }
+    div:hover{
+      .name{top: -32px;}
+    }
+  }
+  /*合辑推荐*/
+  .hj-recom-list{
+    li{
+      width: 220px;
+      background: #F9F9F9;
+      img{
+        width: 220px;
+        height: 151px;
+      }
+      .media-con{
+        height: 60px;
+        text-indent: 2em;
+        color: #a8a8a8;
+      }
+    }
+  }
+  /*排行榜*/
+  .rank-box{
+    & > div{width: 280px;}
+    & > .l{margin-right: 18px;}
+    &:after{
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      overflow: hidden;
+    }
+  }
+  .rank-list{
+    li{
+      background: #F7F7F7;
+      padding: 15px 0;
+      width: 280px;
+    }
+    .game-rank{
+      vertical-align: top;
+      span{
+        width: 22px;
+        line-height: 22px;
+        background: #C9C9C9;
+        margin-right: 10px;
+        color: #fff;
+      }
+    }
+    .f-th .game-rank span{background: #FB7775;}
+    .first .game-rank span{
+      position: relative;
+      &:after{
+        content: "";
+        position: absolute;
+        background: url(../images/icon.png) no-repeat 0 -414px;
+        width: 21px;
+        height: 18px;
+        top: -12px;
+        left: -8px;
+      }
+    }
+    li:nth-of-type(2n){background: #fff}
+    .game-icon{
+      display: none;
+      img{
+        width: 77px;
+        height: 77px;
+        margin-right: 10px;
+      }
+    }
+    .game-name{
+      font-size: 16px;
+      width: 157px;
+      line-height: 24px;
+      height: 24px;
+      margin-bottom: 4px;
+    }
+    .game-down{
+      display: none;
+      a{
+        line-height: 24px;
+        width: 60px;
+        @include hollow-btn(3px,1px,#f60);
+      }
+    }
+    li.on{
+      box-shadow:0 5px 5px -5px #b5b5b5;
+      position: relative;
+      .game-name{height: 48px;}
+      .game-icon, .game-down{display: block;}
+    }
+  }
+
+  /*游戏开服开测*/
+  .kfkc{
+    margin-left: 165px;
+    .hd{
+      .info{
+        font-size: 18px;
+        margin-top: 25px;
+        span{
+          font-size: 26px;
+          color: #f60;
+        }
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: #f60;
+        left: 10px;
+        bottom: 15px;
+      }
+      .icon{
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+        z-index: 3;
+      }
+      ul{
+        vertical-align: middle;
+        margin-left: -30px;
+        z-index: 2;
+      }
+      li{
+        line-height: 50px;
+        padding:0 20px 0 40px;
+        background: #fff;
+        font-size: 18px;
+        &:after{
+          content: "";
+          position: absolute;
+          border-top:transparent 25px solid;
+          border-bottom: transparent 25px solid;
+          border-left:#fff 15px solid;
+          top: 0;
+          right: -15px;
+          z-index: 2;
+        }
+        &.on{
+          background: #f60;
+          color: #fff;
+          &:after{border-left-color: #f60;}
+        }
+      }
+    }
+  }
+  .kf .hd .icon{background: url(../images/game/kfkc-icon.png) no-repeat;}
+  .kc .hd .icon{background: url(../images/game/kfkc-icon.png) no-repeat 0 -80px;}
+  .kfkc-list{
+    margin-left: 39px;
+    padding-left: 39px;
+    border-left: #f60 3px solid;
+    li{
+      width: 100%;
+      box-sizing: border-box;
+      &:before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background: #f60;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: all 0.5s;
+        transition: width 0.5s;
+      }
+      &:hover:before{width: 100%;}
+      &:after{
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: #F6F6F6 url(../images/game/det-img.png) no-repeat center;
+        left: -47px;
+        top: 75px;
+      }
+      &:hover:after{
+        width: 27px;
+        height: 17px;
+        padding: 5px;
+        top: 70px;
+        left: -55px;
+        background:#f6f6f6 url(../images/game/list-img.png) no-repeat center;
+      }
+      .game-icon{
+        width: 152px;
+        max-width: 152px;
+      }
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+        border:#f60 6px solid ;
+      }
+      .game-info{
+        width: 290px;
+        max-width: 290px;
+        & > p{
+          color: #a8a8a8;
+          line-height: 28px;
+          span{color: #f60;}
+        }
+      }
+      .game-name{
+        width: 285px;
+        .dis-ib{vertical-align: middle;}
+        font-size: 18px;
+        p{max-width: 214px;}
+      }
+      .btns a{
+        width: 174px;
+        line-height: 50px;
+        box-sizing: border-box;
+        background-color: #F8F8F8;
+        border: #e8e8e8 1px solid;
+        border-radius: 4px;
+        font-size: 18px;
+        padding-right: 30px;
+        i{
+          background-image: url(../images/icon.png);
+          margin: 13px 0 0 30px;
+        }
+      }
+      .lq-btn{
+        i{
+          width: 23px;
+          height: 23px;
+          background-position: 0 -432px;
+        }
+        &:hover{
+          background-color: #f60;
+          color: #fff;
+          i{background-position: -23px -432px;}
+        }
+      }
+      .xz-btn{
+        margin: 0 40px 0 70px;
+        i{
+          width: 20px;
+          height: 20px;
+          margin-top: 16px !important;
+          background-position: -46px -435px;
+        }
+        &:hover{
+          background-color: map_get($pack-btn-color,xz);
+          color: #fff;
+          i{background-position: -66px -435px;}
+        }
+      }
+    }
+  }
+
+  /*分页*/
+  .already .page-list{
+    position: absolute;
+    left:50px;
+    top: 50px;
+    li{
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      overflow: hidden;
+      &.page-on{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+    .page-prev a{
+      &:after{
+        border-right-color: transparent;
+        border-bottom-color: #6b6b6b;
+        border-left: transparent 8px solid;
+        top: 14px;
+        left: 15px;
+      }
+      &:hover:after{
+        border-right-color: transparent;
+        border-bottom-color: #fff;
+      }
+    }
+    .page-next a{
+      &:after{
+        border-right: transparent 8px solid;
+        border-top-color: #6b6b6b;
+        border-left-color: transparent;
+        top: 24px;
+        left: 15px;
+      }
+      &:hover:after{
+        border-left-color: transparent;
+        border-top-color: #fff;
+      }
+    }
+    .page-el{
+      border: none;
+      transform: rotate(90deg);
+      padding-bottom: 15px;
+      background: none;
+    }
+  }
+
+  /*即将开服开测*/
+  .kfkc-time{
+    font-size: 18px;
+    &:after{
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      padding: 5px;
+      background:#F6F6F6 url(../images/game/time-img.png) no-repeat center;
+      left: -58px;
+      top: -6px;
+    }
+    .time{
+      background: url(../images/game/time-bg.png) no-repeat;
+      width: 179px;
+      height: 46px;
+      line-height: 44px;
+      box-sizing: border-box;
+      left: -240px;
+      top:-10px;
+      color: #fff;
+      font-size: 22px;
+    }
+    span{color: #f60;}
+  }
+
+  /*游戏详情*/
+  .game-det{
+    padding: 25px 0 15px 40px;
+    box-sizing: border-box;
+    .dis-item{vertical-align: top;}
+    .game-icon{
+      width: 168px;
+      max-width: 168px;
+      & > img{
+        width: 168px;
+        height: 168px;
+        border-radius: 5px;
+      }
+      .coll{
+        width: 36px;
+        height: 41px;
+        background: url(../images/icon.png) -371px -332px;
+        top: -3px;
+        left: -8px;
+        i{
+          width: 20px;
+          height: 19px;
+          background: url(../images/icon.png) no-repeat;
+          cursor: pointer;
+          margin-top: 8px;
+        }
+        .coll-def{background-position: -371px -313px;}
+        .coll-on{background-position: -371px -294px;}
+      }
+      .to-login{
+        background: url(../images/game/to-login.png) no-repeat;
+        width: 79px;
+        height: 34px;
+        top: -3px;
+        left: 35px;
+        display: none;
+        a{
+          width: 32px;
+          height: 20px;
+          top: 8px;
+          right: 6px;
+        }
+      }
+      .xz-btn{
+        width: 144px;
+        line-height: 48px;
+        font-size: 18px;
+        cursor: pointer;
+        @include solid-btn(none,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));
+      }
+    }
+    .game-info{
+      width: 500px;
+      max-width: 500px;
+      h2{
+        line-height: 24px;
+        .dis-ib{vertical-align: middle;}
+        a{
+          font-size: 14px;
+          padding-bottom: 2px;
+        }
+      }
+      .lq-btn{@include solid-btn(none,map_get($pack-btn-color,lq),darken(map_get($pack-btn-color,lq),6%));}
+      .zq-btn{@include solid-btn(none,map_get($pack-btn-color,zq),darken(map_get($pack-btn-color,zq),6%));}
+      .lt-btn{@include solid-btn(none,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));}
+      .gw-btn{@include solid-btn(none,#494949,darken(#494949,6%));}
+      .game-name{
+        font-size: 22px;
+        color: #242424;
+        max-width: 200px;
+      }
+      p{
+        line-height: 26px;
+        color: #525252;
+      }
+    }
+    .score{
+      background: url(../images/game/score-bg.png) no-repeat;
+      width: 151px;
+      line-height: 156px;
+      color: #fe4d4d;
+      font-size: 60px;
+      font-family: "Arial";
+      box-sizing: border-box;
+      span{font-size: 84px;}
+    }
+    .comment-info{
+      width: 300px;
+      max-width: 300px;
+      strong{font-size: 18px;}
+      li{margin-top: 25px;}
+      span{color: #fe4d4d;}
+      .comment-score{
+        width: 155px;
+        height: 10px;
+        background: #F3F3F3;
+        span{
+          height: 10px;
+          background: #fe4d4d;
+        }
+        &:after, & span:after{
+          content: "";
+          position: absolute;
+          border-left: #F3F3F3 5px solid;
+          border-top: transparent 5px solid;
+          border-bottom: transparent 5px solid;
+          top: 0;
+          right: -5px;
+        }
+        & span:after{
+          border-left-color: #fe4d4d;
+          z-index: 2;
+        }
+      }
+      .qq-group{
+        margin-top: 40px;
+        a{
+          width: 94px;
+          line-height: 30px;
+          box-sizing: border-box;
+          padding-left: 35px;
+          border: #E8E8E8 1px solid;
+          border-radius: 5px;
+          background: #F8F8F8;
+          &:after{
+            content: "";
+            position: absolute;
+            background: url(../images/icon.png) no-repeat;
+            left: 12px;
+            top: 6px;
+          }
+          &:hover{background: darken(#f8f8f8,6%);}
+        }
+        .qq1{
+          margin:0 14px 0 -20px;
+          &:after{
+            background-position: -66px -372px;
+            width: 14px;
+            height: 16px;
+          }
+        }
+        .qq2:after{
+          background-position: -80px -372px;
+          width: 16px;
+          height: 16px;
+          top: 7px;
+        }
+        .qq3:after{
+          background-position: -96px -372px;
+          top: 9px;
+          width: 15px;
+          height: 14px;
+        }
+      }
+    }
+  }
+  .c-layout{
+    border: #f60 1px solid;
+    z-index: 7;
+    border-radius: 10px;
+    background: #fff;
+    display: none;
+    &:before, &:after{
+      content: "";
+      position: absolute;
+      border-top: transparent 20px solid;
+      border-bottom: transparent 20px solid;
+      border-right: #f60 20px solid;
+      top: 153px;
+      left: -20px;
+    }
+    &:after{
+      border-right-color: #fff;
+      left: -18px;
+    }
+    .close{
+      width: 24px;
+      height: 24px;
+      background: url(../images/icon.png) no-repeat -205px -431px;
+      cursor: pointer;
+      top: 13px;
+      right: 10px;
+    }
+    .tit{
+      width: 410px;
+      line-height: 50px;
+      background: #f60;
+      color: #fff;
+      padding-left: 24px;
+      font-size: 20px;
+    }
+    .qr-code{
+      padding-top: 30px;
+      img{
+        width: 190px;
+        height: 190px;
+        border: #C9C9C9 1px solid;
+      }
+      span{color: #a8a8a8;}
+      &:before, &:after{
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 27px;
+        background: url(../images/icon.png) -140px -428px;
+      }
+      &:before{
+        left: 78px;
+        top: 22px;
+      }
+      &:after{
+        background-position: -172px -428px;
+        right: 80px;
+        bottom: 40px;
+      }
+    }
+  }
+  .down-layout{
+    top: 35px;
+    left: 200px;
+    ul{
+      padding-left: 46px;
+      li a{
+        width: 150px;
+        line-height: 40px;
+        border: #E8E8E8 1px solid;
+        border-radius: 5px;
+        margin-right: 40px;
+        box-sizing: border-box;
+        padding-left: 50px;
+        background: #F8F8F8;
+        font-size: 16px;
+        &:hover{color: #fff;}
+        &:after{
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          background: url(../images/icon.png) no-repeat;
+          left: 12px;
+          top: 5px;
+        }
+      }
+      .down-android:after{background-position: -90px -394px;}
+      .down-ios:after{background-position: -118px -394px;}
+      .down-wp:after{
+        background-position: -146px -394px;
+        top: 6px;
+      }
+      .down-android:hover{
+        background: map_get($pack-btn-color,xz);
+        &:after{background-position: -174px -394px;}
+      }
+      .down-ios:hover{
+        background: #595959;
+        &:after{background-position: -202px -394px;}
+      }
+      .down-wp:hover{
+        background: map_get($pack-btn-color,zq);
+        &:after{background-position: -230px -394px;}
+      }
+      .none span{
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 42px;
+        background: url(../images/shadow.png) repeat;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+        z-index: 5;
+      }
+    }
+    .down-info{color: #a8a8a8;}
+  }
+  .game-tab{
+    .hd{
+      border-bottom: #F3F3F3 1px solid;
+      height: 35px;
+      li{
+        cursor: pointer;
+        width: 160px;
+        font-size: 16px;
+        height: 36px;
+        a{border-right: #F8F8F8 1px solid;}
+        &:last-child span{border-right: none;}
+        &.on, &:hover{
+          background: url(../images/index/tab-on.jpg) no-repeat center bottom;
+          color: #f60;
+        }
+      }
+    }
+    .bd .game-content{
+      color: #525252;
+      width: 90%;
+    }
+  }
+  .focusBox{
+    height: 450px;
+    padding-bottom: 30px;
+    li{line-height: 450px;}
+    img{
+      display: inline-block;
+      max-width: 650px;
+      max-height: 450px;
+      vertical-align: middle;
+    }
+    .prev, .next{
+      position: absolute;
+      width: 44px;
+      height: 76px;
+      background: url(../images/icon.png) no-repeat -180px -247px;
+      left: 0;
+      top: 50%;
+      margin-top: -38px;
+    }
+    .next{
+      background-position: -224px -247px;
+      left: auto;
+      right: 0;
+    }
+    .num{
+      width: 30px;
+      left: 50%;
+      bottom: 0;
+      margin-left: -15px;
+      line-height: 24px;
+      font-size: 16px;
+      .index{
+        font-size: 20px;
+        color: #f60;
+      }
+    }
+  }
+  .game-news-box{
+    & > div{width: 410px;}
+    .tip{margin-bottom: 10px;}
+    .xgzx img{width: 199px;height: 136px;}
+    .yxgl{
+      li{
+        padding-left: 16px;
+        line-height: 28px;
+        &:before, &:after{
+          content: "";
+          position: absolute;
+          border-top: transparent 4px solid;
+          border-bottom: transparent 4px solid;
+          border-left: #f60 10px solid;
+          left: 0;
+          top: 11px;
+        }
+        &:after{
+          border-left-color: #fff;
+          left: -2px;
+        }
+        a{
+          width: 340px;
+          max-width: 340px;
+        }
+      }
+    }
+  }
+  .game-recom{
+    width: 100%;
+    li{width: 20%;}
+    .game-icon img{
+      width: 132px;
+      height: 132px;
+      border-radius: 5%;
+      display: inline-block;
+    }
+    .game-name{
+      font-size: 18px;
+      max-width: 132px;
+    }
+  }
+
+  /*开测页*/
+  .day{
+    line-height: 82px;
+    color: #f60;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-left: 4px;
+  }
+
+  /*游戏攻略/资讯页面*/
+  .game-news-list{
+    li{
+      margin-right: 18px;
+      &:nth-of-type(3n){margin-right: 0;}
+    }
+    img{
+      width: 268px;
+      height: 185px;
+    }
+  }
+
+  /*游戏检索页*/
+  .sear-bar{
+    font-size: 16px;
+    color: #434343;
+    .dis-item{vertical-align: top;}
+    dt{
+      width: 72px;
+      box-sizing: border-box;
+    }
+    dt,dd{
+      float: left;
+      padding:4px 10px 6px;
+      line-height: 20px;
+      margin: 5px 0;
+    }
+    dd{
+      cursor: pointer;
+      margin-right: 10px;
+      &:hover{color: #f60}
+      &:last-child{margin-right: 0;}
+      &.on{
+        background: #f60;
+        color: #fff;
+      }
+    }
+  }
+  .game-sear{
+    padding: 20px 0 0 40px;
+    li{
+      width: 150px;
+      margin: 0 44px 30px 0;
+      &:nth-of-type(6n){margin-right: 40px;}
+    }
+    img{
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+    }
+    .game-name{
+      max-width: 150px;
+      font-size: 16px;
+      line-height: 30px;
+    }
+    .btns a{
+      width: 70px;
+      line-height: 32px;
+      font-size: 16px;
+    }
+    .xz-btn{@include solid-btn(5px,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));}
+    .zq-btn{@include solid-btn(5px,map_get($pack-btn-color,zq),darken(map_get($pack-btn-color,zq),6%));}
+  }
+
+  /*侧边栏*/
+  /*游戏类型*/
+  .game-type-list{
+    height: 340px;
+    box-sizing: border-box;
+    a{
+      width: 130px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #434343;
+      box-sizing: border-box;
+      border: #E5E5E5 1px solid;
+      &:hover{
+        border-color: #FE4F4F;
+        background: #FE4F4F;
+        color: #fff;
+      }
+    }
+  }
+  /*游戏评测*/
+  .game-eval-list{
+    li{
+      border-bottom: #F2F2F2 1px solid;
+      width: 100%;
+      &:last-of-type{border-bottom: none;}
+      &:hover{background: #F9F9F9;}
+    }
+    img{
+      width: 76px;
+      height: 76px;
+      border-radius: 5px;
+    }
+    .game-name{
+      width: 120px;
+      font-size: 18px;
+    }
+    .eval-det{
+      width: 120px;
+      height: 40px;
+      line-height: 20px;
+      color: #a8a8a8;
+    }
+    .score{
+      width: 60px;
+      height: 60px;
+      line-height: 58px;
+      border: #fe4d4d 2px solid;
+      color: #fe4d4d;
+      font-family: Arial;
+      font-size: 32px;
+      box-sizing: border-box;
+      letter-spacing: -2px;
+      span{
+        font-size: 44px;
+        margin-left: -2px;
+      }
+      &:before, &:after{
+        content: "";
+        position: absolute;
+        border-top: transparent 8px solid;
+        border-bottom: transparent 8px solid;
+        top: 22px;
+        left: -8px;
+      }
+      &:before{border-right:#fe4d4d 8px solid;}
+      &:after{border-right: #F9F9F9 8px solid;left: -5px;}
+    }
+  }
+  /*专区推荐*/
+  .zq-recom{
+    height: 344px;
+    li{
+      width: 300px;
+      height: 104px;
+      &:hover .recom-game{left: 0;}
+      a{
+        width: 300px;
+        height: 104px;
+      }
+      .recom-game{
+        width: 290px;
+        height: 104px;
+        background: url(../images/shadow.png) repeat;
+        background: rgba(0,0,0,0.75);
+        left: -100%;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+        img{
+          width: 75px;
+          height: 75px;
+          border-radius: 5px;
+        }
+        & > div{
+          height: 104px;
+          color: #fff;
+          font-family: "黑体";
+          strong{font-size: 16px;}
+        }
+      }
+      .recom-img{
+        width: 300px;
+        height: 104px;
+      }
+
+    }
+  }
+  /*开测表*/
+  .kc-list{
+    padding-bottom: 7px;
+    li{
+      border-bottom:#F3F3F3 1px solid;
+      line-height: 34px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-transition: color 0.6s;
+      transition: color 0.6s;
+      &:last-child{border-bottom:none;}
+      &:after{
+        content: "";
+        position: absolute;
+        background: #f60;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: transform 0.5s;
+        transition: transform 0.5s;
+        z-index: -1;
+        transform-origin: 100% 0;
+      }
+      &:hover{color: #fff;}
+      &:hover:after{
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+      .date{
+        width: 60px;
+        margin-right:15px;
+      }
+      .name{width: 115px;}
+      .test{
+        width: 95px;
+        margin-left: 15px;
+      }
+    }
+  }
+  /*礼包精灵*/
+  .app{
+    width: 320px;
+    box-sizing: border-box;
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+    }
+    .app-name{
+      color: #525252;
+      font-size: 18px;
+    }
+    .app-detail{
+      width: 100px;
+      color: #a8a8a8;
+      line-height: 24px;
+    }
+    .btn{
+      width: 78px;
+      line-height: 32px;
+      font-size: 18px;
+      @include hollow-btn(none,2px);
+    }
+  }

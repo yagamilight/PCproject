@@ -1,0 +1,27 @@
+@charset "UTF-8";
+$pack-btn-color:(
+        lq:#fe4d4d, /*领取*/
+        th:#2CBCC1, /*淘号*/
+        js:#b9b9b9, /*结束*/
+        yd:#42dacd, /*预定*/
+        xz:#5DBE2F, /*下载*/
+        zq:#009CFF  /*专区*/
+);
+
+
+@mixin hollow-btn($radius,$br-w,$color:#f60){ /*空心按钮*/
+  border-radius: $radius;
+  border: $br-w $color solid;
+  color: $color;
+  &:hover{
+    background: $color;
+    color: #fff;
+  }
+}
+
+@mixin solid-btn($radius,$bg-c,$h-bg-c){   /*实心按钮*/
+  border-radius: $radius;
+  color: #fff;
+  background: $bg-c;
+  &:hover{background: $h-bg-c;}
+}

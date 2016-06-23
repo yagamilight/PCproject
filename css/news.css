@@ -1,0 +1,218 @@
+@charset "UTF-8";
+.news-nav a {
+  padding: 0 25px; }
+.news-nav i {
+  background: url(../images/icon.png) no-repeat -406px -375px; }
+
+/*新闻列表*/
+.news-list {
+  width: 860px; }
+  .news-list li:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: #f60;
+    -webkit-transition: all 0.5s;
+    transition: height 0.5s; }
+  .news-list li:hover:before {
+    height: 100%; }
+  .news-list li h2 {
+    font-size: 20px;
+    line-height: 58px;
+    border-bottom: #F0F0F0 1px solid; }
+  .news-list li img {
+    width: 244px;
+    height: 168px; }
+  .news-list li p {
+    color: #a8a8a8;
+    line-height: 24px;
+    width: 540px;
+    height: 168px; }
+  .news-list .news-tip {
+    line-height: 38px;
+    border-top: #F0F0F0 1px solid; }
+    .news-list .news-tip span {
+      color: #f60; }
+
+/*侧边栏*/
+.side-bar .bg-girl1 img {
+  width: 300px;
+  height: 206px; }
+.side-bar .bg-girl2 img {
+  width: 145px;
+  height: 100px; }
+
+.ad img {
+  width: 320px;
+  height: 219px; }
+
+.side-news-list li {
+  border-bottom: #F0F0F0 1px solid; }
+  .side-news-list li:last-child {
+    border-bottom: none; }
+.side-news-list img {
+  width: 108px;
+  height: 74px; }
+.side-news-list .title {
+  font-size: 16px;
+  width: 180px; }
+.side-news-list p {
+  width: 180px;
+  height: 40px; }
+
+.side-game-list li {
+  width: 100px; }
+  .side-game-list li img {
+    width: 76px;
+    height: 76px;
+    border-radius: 10px; }
+  .side-game-list li p {
+    line-height: 30px;
+    margin-bottom: 5px;
+    width: 76px; }
+  .side-game-list li:hover p {
+    color: #f60; }
+
+/*新闻内页*/
+.news {
+  padding: 0 25px; }
+
+.news-tit-con {
+  padding: 20px 10px;
+  border-bottom: #F0F0F0 1px solid;
+  width: 790px; }
+  .news-tit-con img {
+    width: 142px;
+    height: 98px; }
+  .news-tit-con h1 {
+    font-size: 26px;
+    color: #434343;
+    width: 630px; }
+  .news-tit-con .art-info, .news-tit-con .share {
+    color: #a8a8a8; }
+
+.news p {
+  text-indent: 2em;
+  font-family: "宋体";
+  padding: 0 12px;
+  line-height: 28px; }
+  .news p img {
+    margin: 15px auto; }
+
+.art-tip {
+  border-top: #F0F0F0 1px solid;
+  padding: 20px 10px;
+  color: #a8a8a8; }
+
+/*相关推荐*/
+.recom-list {
+  padding: 0 4px; }
+  .recom-list li {
+    width: 200px;
+    margin-right: 7px; }
+    .recom-list li:nth-of-type(4n) {
+      margin-right: 0; }
+    .recom-list li img {
+      width: 200px;
+      height: 136px; }
+    .recom-list li.strategy span {
+      position: absolute;
+      background: url(../images/icon.png) no-repeat -148px -125px;
+      width: 64px;
+      height: 64px;
+      left: -4px;
+      top: -4px;
+      z-index: 5; }
+
+/*内页侧边栏*/
+.game-intro {
+  width: 300px; }
+  .game-intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px; }
+  .game-intro p {
+    color: #a8a8a8;
+    width: 105px;
+    margin-bottom: 3px; }
+  .game-intro .game-name {
+    color: #525252;
+    font-size: 18px;
+    margin-bottom: 10px; }
+    .game-intro .game-name:hover {
+      color: #f60; }
+  .game-intro .btns {
+    width: 74px;
+    font-size: 16px; }
+    .game-intro .btns a {
+      padding: 3px 0;
+      /*空心按钮*/
+      border-radius: 1px;
+      border: 2px #f60 solid;
+      color: #f60; }
+      .game-intro .btns a:hover {
+        background: #f60;
+        color: #fff; }
+
+/*推荐礼包*/
+.pack {
+  color: #525252; }
+  .pack:before, .pack:after {
+    content: "";
+    position: absolute; }
+  .pack:before {
+    background: url(../images/news/p-l-img.png) no-repeat;
+    width: 58px;
+    height: 56px;
+    left: -16px;
+    bottom: -4px; }
+  .pack:after {
+    background: url(../images/news/p-r-img.png) no-repeat;
+    width: 54px;
+    height: 55px;
+    right: -18px;
+    bottom: -6px; }
+
+.pack-info img {
+  width: 300px;
+  height: 80px; }
+
+.pack-info:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2; }
+
+.pack-detail {
+  width: 260px;
+  height: 40px;
+  top: 0;
+  color: #fff;
+  z-index: 4;
+  display: none; }
+
+.pack-info:hover:after {
+  background: url(../images/shadow.png) repeat; }
+.pack-info:hover .pack-detail {
+  display: block; }
+
+.pack-name {
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px; }
+
+.pack-get {
+  width: 214px;
+  border-bottom: #666 1px solid;
+  margin-left: 50px; }
+  .pack-get span {
+    color: #f60; }
+
+/*# sourceMappingURL=news.css.map */

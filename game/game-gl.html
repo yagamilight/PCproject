@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/game.css"/>
+    <!--[if IE 8]>
+    <script src="../js/ie8_h5.js"></script>
+    <style>
+        .game-news-list li{margin-right: 12px;}
+    </style>
+    <![endif]-->
+    <!--[if lt IE 10]>
+    <style>
+        .game-news .news-list li{table-layout: fixed;}
+        .kc-list li:after{background: none;}
+        .kc-list li:hover{background: #f60;}
+        .yxgl li{
+            table-layout: fixed;
+            width: 96%;
+        }
+        .game-recom{table-layout: fixed;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <div class="main-box">
+        <!--头部-->
+        <header class="head">
+            <div class="ovh w1200 auto nav-bar">
+                <a class="logo l" href="../index.html"><img src="../images/head-s-logo.png" alt="1688玩"/></a>
+                <nav class="nav txa-c">
+                    <a class="on" href="game.html">
+                        <span>找游戏</span>
+                    </a>
+                    <a href="../news/news-list.html">
+                        <span>看资讯</span>
+                    </a>
+                    <a href="../original/original.html">
+                        <span>X原创</span>
+                    </a>
+                    <a href="../pack/pack.html">
+                        <span>领礼包</span>
+                    </a>
+                    <a href="../game/game-kc-soon.html">
+                        <span>抢开测</span>
+                    </a>
+                    <a href="#">
+                        <span>发福利</span>
+                    </a>
+                    <a href="../girls/girls.html">
+                        <span>开车吧</span>
+                    </a>
+                    <a href="../firms/firms.html">
+                        <span>挑品牌</span>
+                    </a>
+                    <a href="#">
+                        <span>手游宅</span>
+                    </a>
+                </nav>
+                <div class="r r-tip pis-re">
+                    <div class="sear-bar pis-ab" style="display: none;">
+                        <input type="search" placeholder="搜索其实很简单"/>
+                        <i class="close pis-ab"></i>
+                    </div>
+                    <a href="" class="sear-btn"></a>
+                    <a href="" class="login-btn"></a>
+                    <a href="" class="head-img" style="display: none;"></a>
+                </div>
+            </div>
+            <div class="s-nav-bar">
+                <nav class="s-nav game-nav w1200 auto">
+                    <a class="first" href="game.html">
+                        <i class="dis-ib ver-m"></i>
+                        <span class="dis-ib ver-m">游戏中心</span>
+                    </a>
+                    <a class="on" href="game-search.html">
+                        游戏检索
+                    </a>
+                    <a href="game-kf-already.html">
+                        游戏开测
+                    </a>
+                    <a href="game-kf-already.html">
+                        游戏开服
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <!--头部结束-->
+        <!--通用背投-->
+        <div class="pub-bg"></div>
+        <!--主体-->
+        <div class="main w1200 ovh p10 auto">
+            <div class="nav-position mb10">
+                <i class="l"></i>
+                您的位置：<a class="font-hover" href="">首页</a> > <a class="font-hover" href="">原创中心</a>
+            </div>
+            <div>
+                <div class="f-bg mb20 dis-tb w1200 game-det">
+                    <div class="dis-item txa-c game-icon pr20 pis-re">
+                        <img class="lazy" data-url="../images/pack/pack-b-icon.png" alt=""/>
+                        <span class="coll pis-ab"><i class="dis-b coll-def auto" title="收藏游戏"></i></span>
+                        <span class="to-login pis-ab"><a class="pis-ab" href="#r-login"></a></span>
+                        <span id="game-down" class="dis-ib xz-btn mt20">游戏下载</span>
+                        <div class="pis-ab c-layout down-layout txa-l">
+                            <span class="pis-ab close"></span>
+                            <h4 class="tit" style="border-radius: 6px 6px 0 0;">方法一</h4>
+                            <p class="pis-re txa-c pb15 qr-code">
+                                <img class="dis-ib mb10" src="../images/game/qrcode.jpg" alt=""/>
+                                <br/>
+                                <span>扫描二维码下载游戏</span>
+                            </p>
+                            <h4 class="tit">方法二</h4>
+                            <ul class="ovh pt20">
+                                <li class="l mb20 pis-re"><span class="pis-ab"></span><a class="dis-b pis-re down-android" href="">安卓下载</a></li>
+                                <li class="l mb20 pis-re"><span class="pis-ab"></span><a class="dis-b pis-re down-ios" href="">iTunes下载 </a></li>
+                                <li class="l mb20 pis-re none"><span class="pis-ab"></span><a class="dis-b pis-re down-ios" href="">iOS越狱</a></li>
+                                <li class="l mb20 pis-re"><span class="pis-ab"></span><a class="dis-b pis-re down-wp" href="">WP下载</a></li>
+                            </ul>
+                            <div class="down-info pl20 pr20 pb20">下载描述 > 下载描述下载描 > 述下载 > 描述下载描述 > 述下载 >描述下载 > 描述下载描述</div>
+                        </div>
+                    </div>
+                    <div class="dis-item game-info">
+                        <h2 class="mb10">
+                            <span class="game-name mr10 font-hide dis-ib">游戏名字游戏名字游戏名字游戏名字</span>
+                            <a class="dis-ib pl5 pr5 ml5 lq-btn" href="">礼包领取</a>
+                            <a class="dis-ib pl5 pr5 ml5 zq-btn" href="">专区</a>
+                            <a class="dis-ib pl5 pr5 ml5 lt-btn" href="">论坛</a>
+                            <a class="dis-ib pl5 pr5 ml5 gw-btn" href="">官网</a>
+                        </h2>
+                        <p>收费模式：免费下载</p>
+                        <p>开发商：上海益玩网络科技有限公司</p>
+                        <p>软件语言：中文</p>
+                        <p>类型：角色扮演</p>
+                        <p>更新：2016-02-15</p>
+                    </div>
+                    <div class="dis-item score-info">
+                        <div class="score txa-c pl10">
+                            <span>7</span>.5
+                        </div>
+                    </div>
+                    <div class="dis-item comment-info pl20">
+                        <strong>巅峰之作</strong>
+                        <ul>
+                            <li>
+                                <div class="pis-re dis-ib comment-score mr5">
+                                    <span class="pis-ab" style="width: 100%;"></span>
+                                </div>
+                                <div class="dis-ib">
+                                    画面：<span>90</span>分
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pis-re dis-ib comment-score mr5">
+                                    <span class="pis-ab" style="width: 40%;"></span>
+                                </div>
+                                <div class="dis-ib">
+                                    音效：<span>90</span>分
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pis-re dis-ib comment-score mr5">
+                                    <span class="pis-ab" style="width: 70%;"></span>
+                                </div>
+                                <div class="dis-ib">
+                                    可玩性：<span>90</span>分
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="qq-group">
+                            <a class="qq1 l pis-re" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=99c7b8ff160a72d24a7b97967e6deb0aec9aba0d45aa5313ecb01c7aac01fc38">
+                                福利群
+                            </a>
+                            <a class="qq2 l pis-re" target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=4dcbbca5bb23de51085fb4e4c6a670c65da4af262252dc87b0bbd5e1c6a3505e">
+                                交流群
+                            </a>
+                            <a class="qq3 r pis-re mr10" target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=861990633&amp;site=qq&amp;menu=yes">客服QQ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-content l">
+                    <div class="game-tab f-bg pl10 pr10 pt20 mb20">
+                        <div class="hd mb20">
+                            <ul class="ovh txa-c">
+                                <li class="l">
+                                    <a class="dis-b font-hover" href="game-detail.html">游戏介绍</a>
+                                </li>
+                                <li class="l on">
+                                    <a class="dis-b font-hover" href="game-gl.html">游戏攻略</a>
+                                </li>
+                                <li class="l">
+                                    <a class="dis-b font-hover" href="game-zx.html">游戏资讯</a>
+                                </li>
+                                <li class="l">
+                                    <a class="dis-b font-hover" href="../pack/pack-coll.html">游戏礼包</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul class="ovh game-news-list">
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                                <li class="l mb10">
+                                    <a href="">
+                                        <div class="ovh">
+                                            <img class="img-hover lazy" data-url="../images/index/img22.jpg" alt=""/>
+                                        </div>
+                                        <p class="font-hide txa-c media-tit">标题标题标题</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="page-list txa-c">
+                        <li class="page-prev"><a class="dis-b" href=""></a></li>
+                        <li class="page-item page-on"><a class="dis-b" href="">1</a></li>
+                        <li class="page-item"><a class="dis-b" href="">2</a></li>
+                        <li class="page-item"><a class="dis-b" href="">3</a></li>
+                        <li class="page-el">...</li>
+                        <li class="page-last"><a class="dis-b" href="">5</a></li>
+                        <li class="page-next"><a class="dis-b" href=""></a></li>
+                    </ul>
+                </div>
+                <div class="side-bar r">
+                    <div class="dis-tb app f-bg p10 mb20">
+                        <div class="dis-item">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </div>
+                        <div class="dis-item pl10 pr10">
+                            <a class="dis-b app-name" href="">礼包精灵</a>
+                            <p class="app-detail mt5">
+                                更多礼包免费领取，就来礼包精灵吧！
+                            </p>
+                        </div>
+                        <div class="dis-item">
+                            <a class="btn dis-b txa-c" href="">安装</a>
+                        </div>
+                    </div>
+                    <div class="f-bg pl10 pr10 mb20 ovh">
+                        <h3 class="tip">
+                            <span>游戏评测</span>
+                        </h3>
+                        <ul class="game-eval-list">
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="dis-tb pt10 pb10">
+                                <div class="dis-item">
+                                    <a href=""><img class="lazy" data-url="../images/pack/game-icon.png" alt=""/></a>
+                                </div>
+                                <div class="dis-item pl10">
+                                    <p class="game-name font-hide font-hover"><a href="">音乐舞蹈音乐舞蹈</a></p>
+                                    <p class="ovh eval-det mt5">
+                                        一句话评价 一句话评价一句话评价一句话评价一句话评价一句话评价
+                                    </p>
+                                </div>
+                                <div class="dis-item">
+                                    <p class="score txa-c ml20 mr10 pis-re">
+                                        <span>5</span>.5
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f-bg mb20 pl10 pr10 ovh">
+                        <h3 class="tip">
+                            <span>专区推荐</span>
+                        </h3>
+                        <ul class="zq-recom">
+                            <li class="mb10 ovh pis-re">
+                                <div class="recom-game pis-ab pl10">
+                                    <a href=""><img class="dis-ib ver-m" src="../images/pack/game-icon.png" alt=""/></a>
+                                    <div class="dis-ib ver-m">
+                                        <strong class="dis-b font-hide mt15 font-hover"><a href="">游戏名字名字</a></strong>
+                                        <p class="font-hide">类型：角色扮演</p>
+                                    </div>
+                                </div>
+                                <a class="dis-b" href="">
+                                    <img class="recom-img lazy" data-url="../images/game/zq-recom.jpg" alt=""/>
+                                </a>
+                            </li>
+                            <li class="mb10 ovh pis-re">
+                                <div class="recom-game pis-ab pl10">
+                                    <a href=""><img class="dis-ib ver-m" src="../images/pack/game-icon.png" alt=""/></a>
+                                    <div class="dis-ib ver-m">
+                                        <strong class="dis-b font-hide mt15 font-hover"><a href="">游戏名字名字</a></strong>
+                                        <p class="font-hide">类型：角色扮演</p>
+                                    </div>
+                                </div>
+                                <a class="dis-b" href="">
+                                    <img class="recom-img lazy" data-url="../images/game/zq-recom.jpg" alt=""/>
+                                </a>
+                            </li>
+                            <li class="mb10 ovh pis-re">
+                                <div class="recom-game pis-ab pl10">
+                                    <a href=""><img class="dis-ib ver-m" src="../images/pack/game-icon.png" alt=""/></a>
+                                    <div class="dis-ib ver-m">
+                                        <strong class="dis-b font-hide mt15 font-hover"><a href="">游戏名字名字</a></strong>
+                                        <p class="font-hide">类型：角色扮演</p>
+                                    </div>
+                                </div>
+                                <a class="dis-b" href="">
+                                    <img class="recom-img lazy" data-url="../images/game/zq-recom.jpg" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="f-bg mb20 pl10 pr10">
+                        <h3 class="tip">
+                            <span>开测表</span>
+                        </h3>
+                        <ul class="kc-list">
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                            <li class="ovh pis-re">
+                                <a href="">
+                                    <span class="l date txa-c">02-15</span>
+                                    <span class="l font-hide name">游戏名游戏名游戏名游戏名游戏名游戏名</span>
+                                    <span class="r test txa-c">公测</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部-->
+        <footer class="foot">
+            <div class="w1200 auto">
+                <div class="foot-sitemap-box dis-tb">
+                    <div class="foot-logo dis-item txa-c">
+                        <a href=""><img class="foot-logo-img dis-ib" src="../images/index/foot-logo.png" alt=""/></a>
+                    </div>
+                    <div class="foot-sitemap dis-item">
+                        <dl class="ovh">
+                            <dt class="l"><a href="">资讯中心：</a></dt>
+                            <dd class="l"><a href="">手游资讯</a></dd>
+                            <dd class="l"><a href="">手游评测</a></dd>
+                            <dd class="l"><a href="">手游攻略</a></dd>
+                            <dd class="l"><a href="">专访报道</a></dd>
+                            <dd class="l"><a href="">活动推荐</a></dd>
+                            <dd class="l"><a href="">产业新闻</a></dd>
+                            <dd class="l"><a href="">八卦周边</a></dd>
+                        </dl>
+                        <dl class="ovh">
+                            <dt class="l"><a href="">游戏中心：</a></dt>
+                            <dd class="l"><a href="">游戏库</a></dd>
+                            <dd class="l"><a href="">新游频道</a></dd>
+                            <dd class="l"><a href="">开服表</a></dd>
+                            <dd class="l"><a href="">开测表</a></dd>
+                            <dd class="l"><a href="">礼包中心</a></dd>
+                            <dd class="l"><a href="">活动中心</a></dd>
+                        </dl>
+                        <dl class="ovh">
+                            <dt class="l"><a href="">手游专区：</a></dt>
+                            <dd class="l"><a href="">征途</a></dd>
+                            <dd class="l"><a href="">熹妃传</a></dd>
+                            <dd class="l"><a href="">自由之战</a></dd>
+                            <dd class="l"><a href="">热血传奇</a></dd>
+                            <dd class="l"><a href="">战舰少女</a></dd>
+                            <dd class="l"><a href="">梦幻西游</a></dd>
+                            <dd class="l"><a href="">全名突击</a></dd>
+                            <dd class="l"><a href="">天天传奇</a></dd>
+                        </dl>
+                        <dl class="ovh">
+                            <dt class="l"><a href="">特色服务：</a></dt>
+                            <dd class="l"><a href="">G商城</a></dd>
+                            <dd class="l"><a href="">品牌厂商</a></dd>
+                            <dd class="l"><a href="">有图有料</a></dd>
+                            <dd class="l"><a href="">新游周刊</a></dd>
+                            <dd class="l"><a href="">暴打星期三</a></dd>
+                            <dd class="l"><a href="">手游圈知道</a></dd>
+                            <dd class="l"><a href="">试玩直播间</a></dd>
+                            <dd class="l"><a href="">美女记者团</a></dd>
+                            <dd class="l"><a href="">二次元频道</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="about-us txa-c">
+                    <a class="dis-ib" href="">关于我们</a>|
+                    <a class="dis-ib" href="">联系我们</a>|
+                    <a class="dis-ib" href="">免责声明</a>|
+                    <a class="dis-ib" href="">网站地图</a>|
+                    <a class="dis-ib" href="">关键词索引</a>|
+                    <a class="dis-ib qqlink" href="http://wpa.qq.com/msgrd?v=3&amp;uin=861990633&amp;site=qq&amp;menu=yes" >玩家客服QQ：861990633</a>
+                </div>
+                <div class="copyright txa-c">
+                    ©<span class="dis-ib"></span>2009-2016
+                    <span class="dis-ib"></span>1688wan.com
+                    <span class="dis-ib"></span>版权所有
+                    <span class="dis-ib"></span>
+                    <a href="http://www.miitbeian.gov.cn/">浙ICP备14024251-1号</a>
+                    <span class="dis-ib"></span>杭州顺游网络科技有限公司 版权所有
+                    <span class="dis-ib"></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <span class="to-top"></span>
+    <div id="pageslide">
+        <div class="r-login pb10 pis-re" id="r-login">
+            <div class="login-lay">
+                <strong class="log-tit dis-b pb20">
+                    <i class="dis-ib ver-m mr10"></i>
+                    <span class="dis-ib ver-m">登录1688玩</span>
+                </strong>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-name"></label>
+                    <input type="text" placeholder="用户名"/>
+                </div>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-pswd"></label>
+                    <input type="password" placeholder="密码"/>
+                </div>
+                <div class="txa-c mb10">
+                    <button>登&nbsp;&nbsp;&nbsp;录</button>
+                </div>
+                <div class="ovh mb10">
+                    <span class="check-box pis-re l check-on">下次自动登录</span>
+                    <span class="switch-link to-reg r">立即注册</span>
+                </div>
+                <div class="other-log">
+                    其他方式登录
+                </div>
+            </div>
+            <div class="reg-lay" style="display: none;">
+                <strong class="log-tit dis-b pb20">
+                    <i class="dis-ib ver-m mr10"></i>
+                    <span class="dis-ib ver-m">填写注册信息</span>
+                </strong>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-name"></label>
+                    <input type="text" placeholder="用户名/请输入手机号/QQ号"/>
+                </div>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-pswd"></label>
+                    <input type="password" placeholder="密码由英文,数字组成长度为6-12位"/>
+                </div>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-pswd"></label>
+                    <input type="password" placeholder="请再次输入您的密码"/>
+                </div>
+                <div class="pis-re mb20">
+                    <label for="" class="pis-ab u-nick"></label>
+                    <input type="password" placeholder="昵称由2-6位字符组成"/>
+                </div>
+                <div class="mb10">
+                    <!--滑动验证-->
+                </div>
+                <div class="ovh mb10">
+                    <span class="check-box pis-re l check-on">阅读并接受1688玩服务条款</span>
+                    <span class="switch-link to-log r">立即登录</span>
+                </div>
+                <div class="txa-c mb10">
+                    <button>注&nbsp;&nbsp;&nbsp;册</button>
+                </div>
+            </div>
+            <div class="info-lay">
+                <strong class="log-tit dis-b pb20">
+                    <i class="dis-ib ver-m mr10 i-head-img">
+                        <img src="../images/head-img.jpg" alt=""/>
+                    </i>
+                <span class="dis-ib ver-m">
+                    <span class="dis-b user-name font-hide"><a href="">用户昵称</a></span>
+                    <a class="modify" href="">修改资料  | </a><a class="log-out" href="">退出</a>
+                </span>
+                </strong>
+                <div class="my-pack mb20 pb5">
+                    <strong class="tit mb5 dis-b">
+                        我的礼包
+                    </strong>
+                    <dl class="mb5 on">
+                        <dt class="pack-name font-hide">礼包名字名字名字：</dt>
+                        <dd>
+                            <input class="ver-m" id="card" value="XHDApghGIHOPOHP19882787"/><!--这里不能换行--><button class="copy ml5 ver-m" data-clipboard-action="copy" data-clipboard-target="#card">复制</button>
+                        </dd>
+                    </dl>
+                    <dl class="mb5">
+                        <dt class="pack-name font-hide">礼包名字名字名字：</dt>
+                        <dd>
+                            <input class="ver-m" id="card1" value="XHDApghGIHOPOHP19882787"/><button class="copy ml5 ver-m" data-clipboard-action="copy" data-clipboard-target="#card1">复制</button>
+                        </dd>
+                    </dl>
+                    <dl class="mb5">
+                        <dt class="pack-name font-hide">礼包名字名字名字礼包名字名字名字礼包名字名字名字礼包名字名字名字：</dt>
+                        <dd>
+                            <input class="ver-m" id="card2" value="XHDApghGIHOPOHP19882787"/><button class="copy ml5 ver-m" data-clipboard-action="copy" data-clipboard-target="#card2">复制</button>
+                        </dd>
+                    </dl>
+                    <dl class="mb5">
+                        <dt class="pack-name font-hide">礼包名字名字名字：</dt>
+                        <dd>
+                            <input class="ver-m" id="card3" value="XHDApghGIHOPOHP19882787"/><button class="copy ml5 ver-m" data-clipboard-action="copy" data-clipboard-target="#card3">复制</button>
+                        </dd>
+                    </dl>
+                    <dl class="mb5">
+                        <dt class="pack-name font-hide">礼包名字名字名字：</dt>
+                        <dd>
+                            <input class="ver-m" id="card4" value="XHDApghGIHOPOHP19882787"/><button class="copy ml5 ver-m" data-clipboard-action="copy" data-clipboard-target="#card4">复制</button>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="hot-pack mb20">
+                    <strong class="tit mb10 dis-b">
+                        <i class="dis-ib ver-m mr5" style="background: url(../images/icon.png) no-repeat -66px -372px;width: 14px;height: 16px;"></i>热门礼包
+                    </strong>
+                    <dl class="mb10">
+                        <dt class="dis-ib ver-m mr5">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </dt>
+                        <dd class="dis-ib ver-m pack-name font-hide">
+                            <a class="font-hover" href="">礼包名字名字名字礼包名字名字名字礼包名字名字名字礼包名字名字名字</a>
+                        </dd>
+                    </dl>
+                    <dl class="mb10">
+                        <dt class="dis-ib ver-m mr5">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </dt>
+                        <dd class="dis-ib ver-m pack-name font-hide">
+                            <a class="font-hover" href="">礼包名字名字名字礼包名字名字名字</a>
+                        </dd>
+                    </dl>
+                    <dl class="mb10">
+                        <dt class="dis-ib ver-m mr5">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </dt>
+                        <dd class="dis-ib ver-m pack-name font-hide">
+                            <a class="font-hover" href="">礼包名字名字名字礼包名字名字名字</a>
+                        </dd>
+                    </dl>
+                    <dl class="mb10">
+                        <dt class="dis-ib ver-m mr5">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </dt>
+                        <dd class="dis-ib ver-m pack-name font-hide">
+                            <a class="font-hover" href="">礼包名字名字名字礼包名字名字名字</a>
+                        </dd>
+                    </dl>
+                    <dl class="mb10">
+                        <dt class="dis-ib ver-m mr5">
+                            <a href=""><img src="../images/pack/pack-icon.png" alt=""/></a>
+                        </dt>
+                        <dd class="dis-ib ver-m pack-name font-hide">
+                            <a class="font-hover" href="">礼包名字名字名字礼包名字名字名字</a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="my-game">
+                    <strong class="tit mb10 dis-b">
+                        <i class="dis-ib ver-m mr5" style="background: url(../images/icon.png) no-repeat -371px -277px;width: 18px;height: 17px;"></i>我的游戏
+                    </strong>
+                    <ul class="my-game-list dis-tb">
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="my-game-list dis-tb">
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字游戏名字
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="" class="pis-re dis-ib">
+                                <img class="dis-ib" src="../images/pack/pack-b-icon.png" alt=""/>
+                                <span class="pis-ab push-num txa-c">4</span>
+                                <p class="font-hide txa-c dis-ib">
+                                    游戏名字
+                                </p>
+                            </a>
+                        </li>
+                        <li class="dis-item pr15">
+                            <a href="../game/game-search.html">
+                                <img class="dis-ib" src="../images/add-coll.png" alt=""/>
+                                <p class="font-hide txa-c dis-ib">
+                                    添加收藏
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/jquery.scrollLoading-min.js"></script>
+<script src="../js/divscroll.js"></script>
+<script src="../js/my_pub_js.js"></script>
+<script>
+    var game_down=$("#game-down"),
+            down_layout=$(" .down-layout"),
+            close=down_layout.find(" .close"),
+            coll=$(" .coll i"),
+            login=$(".to-login"),
+            login_btn=login.children("a");
+
+    $("body").on("click",function(){
+        down_layout.fadeOut();
+        login.fadeOut();
+    });
+
+    game_down.on("click",function(e){
+        e.stopPropagation();
+        down_layout.fadeIn();
+    });
+    close.on("click",function(){
+        down_layout.fadeOut();
+    });
+    down_layout.on("click",function(e){
+        e.stopPropagation();
+    });
+
+    /*需要判断是否登录*/
+    coll.on("click",function(e){
+        e.stopPropagation();
+        if($(this).is(".coll-def")){
+            $(this).removeClass("coll-def").addClass("coll-on");
+        }else if($(this).is(".coll-on")){
+            $(this).removeClass("coll-on").addClass("coll-def");
+        }
+        //如果没有登录
+        login.fadeIn();
+    });
+
+    var m_body=$(".main-box"),
+            pageslide=$("#pageslide");
+    login_btn.on("click",function(){
+        toggle_bar(m_body,pageslide);
+        return false;
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+@import "scss/button";
+.sear-nav {
+  i{background: url(../images/icon.png) no-repeat -365px -373px;}
+}
+.search-bar{
+  input{
+    height: 40px;
+    line-height: 40px;
+    width: 400px;
+    padding: 0 10px;
+    color: #252525;
+    border: #f60 1px solid;
+    border-radius: 2px 0 0 2px;
+  }
+  button{
+    width: 76px;
+    height: 40px;
+    background:#f60 url(../images/search/sear.png) no-repeat center;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+  }
+}
+.sear-game{
+  img{
+    width: 93px;
+    height: 31px;
+    border: transparent 1px solid;
+    &:hover{border-color: #f60;}
+  }
+}
+.base-c{color: #f60;}
+.game-tj{
+  li{
+    width: 245px;
+    margin-right: 50px;
+    &:nth-of-type(3n){margin-right: 0;}
+    p{width: 130px;}
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+    }
+  }
+  .game-name{font-size: 18px;}
+  .game-type{color: #a8a8a8;}
+  .btns a{
+    width: 58px;
+    line-height: 32px;
+    font-size: 16px;
+  }
+  .xz-btn{@include solid-btn(5px,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));}
+  .zq-btn{@include solid-btn(5px,map_get($pack-btn-color,zq),darken(map_get($pack-btn-color,zq),6%));}
+}
+.pack-list{
+  img{
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+  }
+  li{
+    margin-bottom: 20px;
+    width: 33.3%;
+    &:nth-of-type(2n+1){
+      .pack-c-btn{margin-right: 70px;}
+    }
+  }
+  .pack-name{
+    width: 212px;
+    font-size: 16px;
+  }
+  .pack-info{
+    width: 212px;
+    font-size: 14px;
+    font-family: "黑体";
+    color: #a8a8a8;
+    span{color: #f60;}
+  }
+}
+.pack-c-btn{
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-family: "黑体";
+  font-size: 18px;
+}
+.pack-c-lq{
+  @include hollow-btn(50%,1px,map_get($pack-btn-color,lq));
+}
+.pack-c-th{
+  @include hollow-btn(50%,1px,map_get($pack-btn-color,th));
+}
+.pack-c-js{
+  @include hollow-btn(50%,1px,map_get($pack-btn-color,js));
+}
+.pack-c-yd{
+  @include hollow-btn(50%,1px,map_get($pack-btn-color,yd));
+}
+.news-list{
+  img{
+    width: 220px;
+    height: 150px;
+  }
+  li{border-bottom: #F0F0F0 1px solid;}
+  li:last-of-type{border-bottom: none;}
+  p{height: 98px;}
+}
+.load-more{
+  width: 300px;
+  height: 46px;
+  line-height: 42px;
+  font-size: 20px;
+  @include hollow-btn(none,2px);
+}
+
+.tip .back{
+  font-size: 14px;
+  line-height: 44px;
+}
+
+/*侧边栏*/
+.side-news-list{
+  li{
+    border-bottom: #F0F0F0 1px solid;
+    &:last-child{border-bottom: none;}
+  }
+  img{
+    width: 108px;
+    height: 74px;
+  }
+  .title{
+    font-size: 16px;
+    width: 180px;
+  }
+  p{
+    width: 180px;
+    height: 40px;
+  }
+}
+.side-game-list{
+  li{
+    width: 100px;
+    img{
+      width: 76px;
+      height: 76px;
+      border-radius: 10px;
+    }
+    p{
+      line-height: 30px;
+      margin-bottom: 5px;
+      width: 76px;
+    }
+    &:hover p{color: #f60;}
+  }
+}

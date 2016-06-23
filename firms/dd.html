@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title></title>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background: url(../images/firms/top-bg.png) no-repeat center 0;
+            height: 470px;
+        }
+        .box1{
+            width: 1200px;
+            height: 470px;
+            box-sizing: border-box;
+            padding: 135px 20px 0;
+            margin:140px auto 0;
+            position: relative;
+        }
+        .box1 li{
+            float: left;
+            width: 25%;
+            height: 186px;
+            position: relative;
+
+        }
+        .out{
+            height: 186px;
+            width: 186px;
+            display: inline-block;
+            margin-left: 60px;
+            position: relative;
+        }
+        .b{
+            width: 186px;
+            height: 186px;
+            background: url(../images/firms/logo-bg.jpg) no-repeat;
+            box-shadow: 0 0 5px -5px #000;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -100px;
+            transition: all 1s;
+        }
+        .trans .b{
+            transform: rotateY(180deg);
+           /* animation: b-move-in 1.5s;
+            animation-fill-mode:forwards;*/
+        }
+        .trans .s{
+            transform: rotateY(0deg);
+            opacity: 1;
+            /*animation: s-move-in 1s 0.5s;
+            animation-fill-mode:forwards;*/
+        }
+        .trans .a{
+            transform: rotateY(180deg);
+            opacity: 0;
+        }
+        .trans .crown{
+            transform: rotateY(180deg);
+            transform-origin: 130px 0;
+            opacity: 0;
+        }
+        .s{
+            width: 164px;
+            height: 164px;
+            position: absolute;
+            left: 3px;
+            top: 12px;
+            z-index: 2;
+            opacity: 0;
+            transform: rotateY(180deg);
+            transition: all 1s ;
+        }
+        .a{
+            width: 164px;
+            height: 164px;
+            position: absolute;
+            left: 3px;
+            top: 12px;
+            z-index: 3;
+            transition: all 1s ;
+        }
+        .crown{
+            background: url(../images/firms/crown.png) no-repeat;
+            width: 76px;
+            height: 70px;
+            z-index: 3;
+            top: -45px;
+            left: 17px;
+            transition: all 1s;
+            opacity: 1;
+        }
+        .a img{width: 164px;height: 164px;}
+        .s img{width: 164px;height: 164px;}
+        .box{
+            position: absolute;
+            width: 290px;
+            height: 305px;
+            background: url(../images/firms/light.png);
+            top: 0;
+            left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <!--头部-->
+    <header class="head">
+        <div class="ovh w1200 auto nav-bar">
+            <a class="logo l" href="../index.html"><img src="../images/head-s-logo.png" alt="1688玩"/></a>
+            <nav class="nav txa-c">
+                <a href="../game/game.html">
+                    <span>找游戏</span>
+                </a>
+                <a class="on" href="../news/news-list.html">
+                    <span>看资讯</span>
+                </a>
+                <a href="../original/original.html">
+                    <span>X原创</span>
+                </a>
+                <a href="pack.html">
+                    <span>领礼包</span>
+                </a>
+                <a href="../game/game-kc-soon.html">
+                    <span>抢开测</span>
+                </a>
+                <a href="#">
+                    <span>发福利</span>
+                </a>
+                <a href="../girls/girls.html">
+                    <span>开车吧</span>
+                </a>
+                <a href="#">
+                    <span>挑品牌</span>
+                </a>
+                <a href="#">
+                    <span>手游宅</span>
+                </a>
+            </nav>
+            <div class="r r-tip pis-re">
+                <div class="sear-bar pis-ab" style="display: none;">
+                    <input type="search" placeholder="搜索其实很简单"/>
+                    <i class="close pis-ab"></i>
+                </div>
+                <a href="" class="sear-btn"></a>
+                <a href="" class="login-btn"></a>
+                <a href="" class="head-img" style="display: none;"></a>
+            </div>
+        </div>
+        <div class="s-nav-bar">
+            <nav class="s-nav pack-nav w1200 auto">
+                <a class="first" href="#">
+                    <i class="dis-ib ver-m"></i>
+                    <span class="dis-ib ver-m">礼包中心</span>
+                </a>
+                <a class="on" href="pack-list.html">
+                    礼包列表
+                </a>
+                <a href="pack-search.html">
+                    礼包检索
+                </a>
+            </nav>
+        </div>
+    </header>
+    <!--头部结束-->
+    <ul class="box1">
+        <span class="box"></span>
+        <li class="trans">
+            <span class="crown pis-ab"></span>
+            <div class="out">
+                <div class="a"><img src="../images/firms/logo.png" alt=""/></div>
+                <div class="s"><img src="../images/firms/video-img.jpg" alt=""/></div>
+                <div class="b"></div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="a"><img src="../images/firms/logo.png" alt=""/></div>
+                <div class="s"><img src="../images/firms/video-img.jpg" alt=""/></div>
+                <div class="b"></div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="a"><img src="../images/firms/logo.png" alt=""/></div>
+                <div class="s"><img src="../images/firms/video-img.jpg" alt=""/></div>
+                <div class="b"></div>
+            </div>
+        </li>
+        <li>
+            <div class="out">
+                <div class="a"><img src="../images/firms/logo.png" alt=""/></div>
+                <div class="s"><img src="../images/firms/video-img.jpg" alt=""/></div>
+                <div class="b"></div>
+            </div>
+        </li>
+    </ul>
+
+
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script>
+    var box=$(".box");
+    var ul=$("ul");
+    var li=ul.children("li");
+    var li_l=li.length;
+
+
+    function move(i){
+        box.animate({"left":li.eq(i).position().left},500);
+        li.eq(i).addClass("trans").siblings("li").removeClass("trans");
+    }
+    var i=0;
+
+    var ani=setInterval(function(){
+        i++;
+        if(i == li_l){
+            i=0;
+        }
+        move(i);
+    },3000);
+
+    li.hover(function(){
+        clearInterval(ani);
+        i=$(this).index()-1;
+        $(this).addClass("trans").siblings("li").removeClass("trans");
+        var left=$(this).position().left;
+        //console.log($(this).position().left);
+        box.stop().animate({"left":left},500);
+    },function(){
+        ani=setInterval(function(){
+            i++;
+            if(i == li_l){
+                i=0;
+            }
+            move(i);
+        },3000);
+    });
+</script>
+</body>
+</html>

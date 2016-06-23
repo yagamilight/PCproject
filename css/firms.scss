@@ -1,0 +1,368 @@
+@charset "UTF-8";
+@import "scss/button";
+.firm-nav {
+  a{padding: 0 35px;}
+  i{background: url(../images/icon.png) no-repeat -367px -237px;}
+}
+.firm-box{
+  padding: 135px 18px 0;
+  box-sizing: border-box;
+  margin-top: -480px;
+  height: 475px;
+  li{
+    width: 25%;
+    height: 186px;
+  }
+  .light{
+    width: 290px;
+    height: 305px;
+    background: url(../images/firms/light.png);
+    top: 0;
+    left: 20px;
+  }
+  .out{
+    width: 186px;
+    height: 186px;
+    margin-left: 52px;
+  }
+  .bg{
+    width: 186px;
+    height: 186px;
+    background: url(../images/firms/logo-bg.jpg) no-repeat;
+    box-shadow: 0 0 5px -5px #000;
+    top: 0;
+    left: 50%;
+    margin-left: -93px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .v-img{
+    width: 164px;
+    height: 164px;
+    left: 12px;
+    top: 12px;
+    z-index: 3;
+    opacity: 0;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transition: all 1s;
+    transition: all 1s ;
+  }
+  .l-img{
+    width: 164px;
+    height: 164px;
+    left: 12px;
+    top: 12px;
+    z-index: 2;
+    -webkit-transition: all 1s;
+    transition: all 1s ;
+  }
+  .crown{
+    background: url(../images/firms/crown.png) no-repeat;
+    width: 76px;
+    height: 70px;
+    z-index: 4;
+    top: -45px;
+    left: 17px;
+    transform: rotateY(180deg);
+    transform-origin: 130px 0;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    opacity: 0;
+  }
+  img{
+    width: 164px;
+    height: 164px;
+  }
+  .trans{
+    .bg{
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+    }
+    .l-img{
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      opacity: 0;
+    }
+    .v-img{
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+    .crown{
+      -webkit-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+  }
+}
+
+.firm-list{
+  & > li{
+    background: url(../images/firms/firm-list-bg.jpg) no-repeat;
+    height: 200px;
+    width: 100%;
+    box-sizing: border-box;
+    .firm-name{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .firm-logo img{
+      width: 260px;
+      height: 160px;
+      border: #F1F0EF 1px solid;
+      &:hover{border-color: #f60}
+    }
+  }
+}
+.firm-info-list{
+  width: 420px;
+  li{
+    line-height: 24px;
+    color: #5f5f5f;
+  }
+}
+.firm-game-list{
+  width: 454px;
+  li{
+    width: 120px;
+    margin-left: 30px;
+    &:hover span{color: #f60;}
+  }
+  img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+  }
+  span{
+    color: #646464;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+.more-firm{
+  @include hollow-btn(0,2px,#5a3710);
+  width: 290px;
+  height: 46px;
+  line-height: 44px;
+  font-size: 20px;
+}
+/*游戏检索*/
+.sear-bar{
+  font-size: 16px;
+  color: #434343;
+  .dis-item{vertical-align: top;}
+  dt{
+    width: 72px;
+    box-sizing: border-box;
+  }
+  dt,dd{
+    float: left;
+    padding:4px 10px 6px;
+    line-height: 20px;
+    margin: 5px 0;
+  }
+  dd{
+    cursor: pointer;
+    margin-right: 10px;
+    &:hover{color: #f60}
+    &:last-child{margin-right: 0;}
+    &.on{
+      background: #f60;
+      color: #fff;
+    }
+  }
+}
+.firm-search-list{
+  margin: 0 20px;
+  li{
+    width: 176px;
+    margin-right: 20px;
+    &:nth-of-type(6n){margin-right: 0;}
+    img{
+      width: 176px;
+      height: 110px;
+      border: #F3F2F1 1px solid;
+      &:hover{border-color: #f60;}
+    }
+    .firm-name{font-size: 18px;}
+    .btn{
+      width: 90px;
+      line-height: 32px;
+      font-size: 18px;
+      @include hollow-btn(5px,1px,map_get($pack-btn-color,zq));
+    }
+  }
+}
+/*厂商详情页*/
+.firm-con{
+  width: 100%;
+  margin-top: 30px;
+  .firm-logo{
+    width: 260px;
+    height: 160px;
+    border: #F3F2F1 1px solid;
+    & > img{
+      width: 260px;
+      height: 160px;
+    }
+    .play-btn{
+      background: url(../images/shadow.png) repeat;
+      width:inherit;
+      height:inherit;
+      top: 0;
+      left: 0;
+      line-height: 160px;
+      cursor: pointer;
+    }
+  }
+  .firm-info{
+    .firm-name{
+      color: #5a5a5a;
+      font-size: 22px;
+    }
+  }
+}
+.firm-intro{
+  background: #F9F9F9;
+  color: #525252;
+  dt{
+    font-size: 18px;
+  }
+  dd{
+    line-height: 22px;
+    height: 61px;
+    z-index: 3;
+    & > div{
+      width: 100%;
+      box-sizing: border-box;
+      height: 66px;
+      background: #F9F9F9;
+      overflow: hidden;
+    }
+  }
+  .more-arr{
+    background: url(../images/firms/arr-down.jpg) no-repeat;
+    width: 46px;
+    height: 14px;
+    left: 50%;
+    bottom:0;
+    margin-left: -23px;
+    cursor: pointer;
+  }
+}
+.all-game-list{
+  li{
+    width: 245px;
+    margin-right: 50px;
+    &:nth-of-type(3n){margin-right: 0;}
+    p{width: 130px;}
+    img{
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+    }
+  }
+  .game-name{font-size: 18px;}
+  .game-type{color: #a8a8a8;}
+  .btns a{
+    width: 58px;
+    line-height: 32px;
+    font-size: 16px;
+  }
+  .xz-btn{@include solid-btn(5px,map_get($pack-btn-color,xz),darken(map_get($pack-btn-color,xz),6%));}
+  .zq-btn{@include solid-btn(5px,map_get($pack-btn-color,zq),darken(map_get($pack-btn-color,zq),6%));}
+}
+.news-list{
+  width: 50%;
+  margin-top: -10px;
+  li{
+    max-width: 90%;
+    line-height: 24px;
+  }
+}
+.other-firm-list{
+  li{
+    width: 25%;
+    a{
+      width: 186px;
+      img{
+        width: 186px;
+        height: 114px;
+        border: #F1F0EF 1px solid;
+      }
+      span{
+        line-height: 30px;
+      }
+    }
+  }
+}
+.video-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/shadow.png) repeat;
+  z-index: 12;
+  display: none;
+}
+.video-box{
+  width: 1024px;
+  height: 576px;
+  top: 50%;
+  left: 50%;
+  margin: -288px 0 0 -512px;
+  padding-top: 30px;
+  background: #000;
+}
+.v-close{
+  width: 30px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  font-size: 26px;
+  line-height: 28px;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+/*侧边栏*/
+.ad-img img{
+  width: 320px;
+  height: 220px;
+}
+.side-news-list{
+  li{
+    border-bottom: #F0F0F0 1px solid;
+    &:last-child{border-bottom: none;}
+  }
+  img{
+    width: 108px;
+    height: 74px;
+  }
+  .title{
+    font-size: 16px;
+    width: 180px;
+  }
+  p{
+    width: 180px;
+    height: 40px;
+  }
+}
+.side-game-list{
+  li{
+    width: 100px;
+    img{
+      width: 76px;
+      height: 76px;
+      border-radius: 10px;
+    }
+    p{
+      line-height: 30px;
+      margin-bottom: 5px;
+      width: 76px;
+    }
+    &:hover p{color: #f60;}
+  }
+}
